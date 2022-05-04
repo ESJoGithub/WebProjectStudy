@@ -1,0 +1,171 @@
+html, body {
+  margin: 0px;
+  padding :0px;
+  height: 100%;
+  font-family: 'Gowun Batang', serif;
+  font-weight: 600;
+}
+h1{
+  margin:0px;
+}
+header{
+  margin-top: 0;
+  width: 100%;
+  height: 60%;
+  background-image: url(media/그림.png);
+  background-size: cover;
+  background-position: 0px;
+  position: relative;
+  top: 0;
+  left: 0;
+
+}
+#maintitle{
+  color: black;
+  position: absolute;
+  bottom: 20%;
+  right: 2em;
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+#mainpage{
+  display: block;
+  margin: 0px;
+  font-style: black;
+  -webkit-text-stroke: 5% white;
+  position: absolute;
+  bottom: 16%;
+  right: 4em;
+  font-family: 'Gowun Dodum', sans-serif;
+  font-size: 25px;
+}
+h3{
+  font-size: 30px;
+  text-align: left;
+  margin-left: 5em;
+}
+#right{
+  text-align: right;
+  margin-right: 5em;
+}
+#center{
+  text-align: center;
+  margin: auto;
+  padding-top: 5em;
+  text-decoration: underline;
+}
+#joa{
+  font-family: 'Jua', sans-serif;
+  text-align: left;
+  margin-bottom: 1em;
+  padding: 0;
+  justify-content: left;
+}
+figcaption{
+  font-size: 9px;
+  justify-content: right;
+  padding: 0;
+}
+nav{
+  display: lineblock;
+  position: fixed;
+  top: 20%;
+  right: 0;
+  z-index: -1;
+  margin: 0;
+  padding: 0 3em 0 0;
+  width: 100px;
+  height: 120px;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-left-color: darkgray;
+  font-family: 'Gugi', cursive;
+}
+ul, ol{
+  list-style-position: inside;
+  list-style-type: none;
+}
+ul li a{
+  text-decoration: none;
+}
+section{
+  display: lineblock;
+  position: absolute;
+  top: 60%;
+  margin: 0;
+  padding: 5em 0em 5em 3em;
+  width: 80%;
+  height: 100%;
+  background-color: white;
+}
+#warning{
+  margin-top: 80px;
+  margin-bottom: 150px;
+  padding: 0;
+  width: 80%;
+  height: 70px;
+  text-align: center;
+  font-size: 15px;
+  box-shadow: 10px 10px 1em darkgray;
+  font-weight: 500;
+}
+#cool{
+  background-color: #e1f5fe;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 10em;
+  margin-left: 0;
+  width: 91%;
+}
+
+#intro{
+  margin: auto; 
+  display: block;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 0;
+  border: 2px double;
+  width: 80%;
+  font-size: 30px;
+}
+div, p{
+  margin: auto;
+  padding-top: 5em;
+  padding-bottom: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+#full{
+  color: #ffd600;
+}
+#empty{
+  color:#ffd600;
+}
+article{
+  font-size: 20px;
+  font-weight: 400;
+}
+article img{
+  border-style: solid;
+  border-color: #e1f5fe;
+  border-width: 3em;
+  border-radius: 1em;
+}
+article h2{
+  font-family: 'Jua', sans-serif;
+  font-size: 40px;
+}
+#sites{
+  color: #b0c3cc;
+}
+#how{
+  font-family: 'Jua', sans-serif;
+}
