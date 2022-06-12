@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="sitemap02.css">
+  <title>한국폴리텍대학 서울정수캠퍼스 인공지능소프트웨어과</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Batang&family=Jua&display=swap"
+    rel="stylesheet">
+  <script>
+    function paintR(obj, i, j, str) {
+      obj.rect(100 + 400 * i, 50 + 70 * j, 300, 50);
+      obj.font = "25px Do Hyeon";
+      obj.textAlign = "center";
+      obj.fillStyle = "black";
+      obj.fillText(str, 250 + 400 * i, 83 + 70 * j);
+    }
+    function changeSize(obj) {
+    }
+  </script>
+</head>
+
+<body>
+  <section id="main_bg">
+    <header>
+      <a href="#">Home</a>|
+      <a href="#">로그인</a>|
+      <a href="#">폴리텍대학</a>|
+      <a href="#">서울정수캠퍼스</a>
+    </header>
+    <nav>
+      <img src="media/CI.png" alt="폴리텍대학 서울정수캠퍼스" width="300px" height="70px">
+      <ul class="nav">
+        <li><a href="#">소개</a></li>
+        <li><a href="#">입학안내</a></li>
+        <li><a href="#">학사안내</a></li>
+        <li><a href="#">학과소식</a></li>
+        <li><a href="#">커뮤니티</a></li>
+      </ul>
+    </nav>
+  </section>
+  <section id="explain">
+    <h1>1. 사이트맵 제작하기</h1>
+    <hr>
+    <div id='sitemap'>
+      <canvas id="myCanvas"></canvas>
+      <script>
+        let canvas = document.getElementById("myCanvas");
+        canvas.setAttribute("width", window.innerWidth);
+        canvas.setAttribute("height", window.innerHeight);
+        let context = canvas.getContext("2d");
+        context.beginPath();
+        paintR(context, 0, 0, "메인페이지"); context.moveTo(400, 75); context.lineTo(500, 75);
+        context.moveTo(400, 75); context.lineTo(500, 355);
+        context.moveTo(400, 75); context.lineTo(500, 565);
+        context.moveTo(400, 75); context.lineTo(500, 635);
+        context.moveTo(400, 75); context.lineTo(500, 775);
+        paintR(context, 1, 0, "소개");
+        context.moveTo(800, 75); context.lineTo(900, 75);
+        context.moveTo(800, 75); context.lineTo(900, 145);
+        context.moveTo(800, 75); context.lineTo(900, 215);
+        context.moveTo(800, 75); context.lineTo(900, 285);
+        paintR(context, 2, 0, "하이테크과정 소개");
+        paintR(context, 2, 1, "학과 소개");
+        paintR(context, 2, 2, "교수진");
+        context.moveTo(1200, 215); context.lineTo(1300, 215);
+        paintR(context, 3, 2, "교수 소개");
+        paintR(context, 2, 3, "찾아오시는 길");
+        paintR(context, 1, 4, "입학안내");
+        context.moveTo(800, 355); context.lineTo(900, 355);
+        context.moveTo(800, 355); context.lineTo(900, 425);
+        context.moveTo(800, 355); context.lineTo(900, 495);
+        paintR(context, 2, 4, "모집요강");
+        paintR(context, 2, 5, "교육과정");
+        paintR(context, 2, 6, "입학문의");
+        paintR(context, 1, 7, "학사안내");
+        context.moveTo(800, 565); context.lineTo(900, 565);
+        paintR(context, 2, 7, "학사일정");
+        paintR(context, 1, 8, "학과소식");
+        context.moveTo(800, 635); context.lineTo(900, 635);
+        context.moveTo(800, 635); context.lineTo(900, 705);
+        paintR(context, 2, 8, "공지사항");
+        paintR(context, 2, 9, "언론보도");
+        paintR(context, 1, 10, "커뮤니티");
+        context.moveTo(800, 775); context.lineTo(900, 775);
+        context.moveTo(800, 775); context.lineTo(900, 845);
+        context.moveTo(800, 775); context.lineTo(900, 915);
+        paintR(context, 2, 10, "취업정보");
+        paintR(context, 2, 11, "자유게시판");
+        paintR(context, 2, 12, "Q&A");
+        context.lineWidth = 1;
+        context.strokeStyle = "darkgray";
+        context.stroke();
+      </script>
+    </div>
+    <h1>2. 메인페이지 레이아웃 정의</h1>
+    <hr>
+    <div>
+      <div id="mainpage">
+        <div id="title">1. 관련 링크</div>
+        <div id="menu">2. 상단 메뉴</div>
+        <section id="mainBanner">
+          &lt;&lt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          3. 메인 소개 배너
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;
+        </section>
+        <section id="notice">
+          <article>4-1. 학교 홍보 영상</article>
+          <article>4-2. 공지사항</article>
+          <article>4-3. 소식</article>
+        </section>
+        <section id="link"> 5. 학과 소개 링크</section>
+        <footer>6. footer</footer>
+      </div>
+      <aside>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <h4>관련 링크</h4> - Home, 로그인, 폴리텍대학 홈페이지, 정수캠퍼스 홈페이지 링크
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <h4>상단 메뉴</h4> - 소개<br> - 입학안내<br> - 학사안내<br> - 학과소식<br> - 커뮤니티
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                <h4>&lt; 메인 소개 배너 &gt;</h4> - 클릭 시 페이지 전환<br> - Image(학과관련 이미지) + text(텍스트문구)<br>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>
+                <h4>공지사항 및 소식</h4> - 공지사항 및 최신 소식, 유튜브 홍보영상<br> - Media(학과 홍보 영상) + text(공지사항 최신내용 일부)
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>
+                <h4>학과 소개 링크</h4> - 학과소개, 교육과정, 모집요강 링크<br> - Image(관련 이미지) + text(메뉴명)
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>
+                <h4>footer</h4> - 학교 정보 표시
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colspan="2">Page Number</th>
+            </tr>
+          </tfoot>
+        </table>
+      </aside>
+    </div>
+  </section>
+</body>
+
+</html>
