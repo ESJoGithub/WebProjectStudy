@@ -1,0 +1,15 @@
+.parent{
+  border:5px solid black;
+  display: grid;
+  /*grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px;*/
+  grid: 100px 200px / auto auto auto;
+}
+.parent div{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  /*padding: 0 20px;*/
+  border: 1px solid white;
+  background-color: yellowgreen;
+}

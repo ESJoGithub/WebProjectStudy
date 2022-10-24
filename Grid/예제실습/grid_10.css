@@ -1,0 +1,30 @@
+.parent{
+  border: 5px solid #333;
+  padding: 10px;
+  background-color: #eee;
+  width: 400px;
+  height: 400px;
+  display: grid;
+}
+.parent div{
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+.parent div:nth-child(1){
+  background-color: yellowgreen;
+  grid-area: 1/1/span 1/ span 1;
+}
+.parent div:nth-child(2){
+  background-color: crimson;
+  grid-area: 1/2/span 1/ span 1;
+}
+.parent div:nth-child(3){
+  background-color: royalblue;
+  grid-area: 2/1/span 1/ span 1;
+}
+.parent div:nth-child(4){
+  background-color: pink;
+  grid-area: 2/2/span 1/ span 1;
+}

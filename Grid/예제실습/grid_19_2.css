@@ -1,0 +1,14 @@
+.parent{
+  display: grid;
+  border: 5px solid #333;
+  padding: 10px;
+  background-color: #a29bfe;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr minmax(200px, auto) 1fr;
+}
+.parent div{
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+}

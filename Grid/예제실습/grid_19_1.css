@@ -1,0 +1,12 @@
+.parent{
+  display: grid;
+  border: 5px solid #000;
+  grid-template-columns: repeat(3, 1fr);
+}
+.parent div{
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid #fff;
+  background-color: yellowgreen;
+}

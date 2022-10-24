@@ -1,0 +1,22 @@
+.parent{
+  border:5px solid black;
+  width: 900px;
+  height: 200px;
+  background-color: khaki;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  align-items: center;
+}
+.parent div{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  background-color: hotpink;
+  /*width: 100px;
+  height: 100px;*/
+}
+.parent div:nth-child(2){
+  justify-self: stretch;
+  align-self: stretch;
+}

@@ -1,0 +1,17 @@
+.parent{
+  display: grid;
+  border: 5px solid #000;
+  background-color: khaki;
+  /*grid-template-areas: 'item item . . .';*/
+  grid-template-areas: ". item . . ." ". item . . .";
+}
+.parent div{
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid #000;
+}
+.item{
+  background-color: crimson;
+  grid-area: item;
+  /*grid-row: 2;*/
+}

@@ -1,0 +1,37 @@
+.parent{
+  display: grid;
+  border: 5px solid #000;
+  background-color: khaki;
+  /*grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;*/
+  grid-template-areas: "header header header header"
+                      "content content . lnb"
+                      "footer footer footer footer";
+}
+.parent div{
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 10px;
+}
+.header{
+  grid-area: header;
+  background-color: yellowgreen;
+  border-radius: 5px;
+}
+.content{
+  grid-area: content;
+  background-color: gray;
+  border-radius: 5px;
+}
+.lnb{
+  grid-area: lnb;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+.footer{
+  grid-area: footer;
+  background-color: royalblue;
+  border-radius: 5px;
+}

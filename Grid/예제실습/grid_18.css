@@ -1,0 +1,31 @@
+.parent{
+  border: 5px solid #333;
+  background-color: khaki;
+  width: 600px;
+  padding: 10px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  grid-template-areas: 'child3 child3';
+}
+.parent div{
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 10px;
+}
+.child3{
+  grid-area: child3;
+  grid-row: 2;
+}
+@media (max-width:768px) {
+  .parent{
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-areas: 'child3';
+    box-sizing: border-box;
+  } 
+  .child3{
+    grid-row: 3;
+  }
+}

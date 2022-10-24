@@ -1,0 +1,20 @@
+.parent{
+  border: 5px solid #000;
+  background-color: khaki;
+  width: 500px;
+  height: 300px;
+  display: grid;
+}
+.item1{
+  background-color: crimson;
+  grid-area: 1 /1 / span 1 / span 2;
+}
+.item2{
+  background-color: yellowgreen;
+  grid-area: 1 / 2 / span 2 / span 1;
+  z-index: 1;
+}
+.item3{
+  background-color: skyblue;
+  grid-area: 2 / 2 / span 1 / span 2;
+}

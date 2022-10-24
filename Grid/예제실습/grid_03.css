@@ -1,0 +1,18 @@
+.parent{
+  border: 5px solid white;
+  width: 900px;
+  height: 300px;
+  background-color: lightcyan;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: end;
+  align-items: center;
+}
+.parent div{
+  color: fff;
+  text-align: center;
+  font-size: 30px;
+  background-color: darkkhaki;
+  width: 100px;
+  height: 100px;
+}
