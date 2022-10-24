@@ -1,0 +1,22 @@
+.parent{
+  border: 5px solid gray;
+  height: 500px;
+  display: flex;
+}
+.parent div{
+  width: 300px;
+  height: 200px;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin: 5px;
+}
+.child1{
+  background-color: orange;
+}
+.child2{
+  background-color: yellowgreen;
+}
+.child3{
+  background-color: purple;
+}
