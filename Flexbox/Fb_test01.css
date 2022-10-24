@@ -1,0 +1,23 @@
+body{
+  height: 500px;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  height: 80%;
+  width: 80%;
+  background-color: WhiteSmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container section{
+  display: flex;
+  height: 65%;
+  width: 65%;
+  background-color: lightgray;
+  justify-content: center;
+  align-items: center;
+}

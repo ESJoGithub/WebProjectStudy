@@ -1,0 +1,24 @@
+header{
+  display: flex;
+  width: 900px;
+  height: 35px;
+  background-color: whitesmoke;
+  padding: 5px 0 5px 0;
+}
+header div{
+  display: flex;
+  width: 150px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.logo{
+  background-color: royalblue;
+  margin: 0 auto 0 2px;
+}
+.gnb, .lnb{
+  background-color: yellowgreen;
+  margin: 0 3px 0 3px;
+}
