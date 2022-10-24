@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>데이터 목록을 가진 텍스트 입력</title>
+  </head>
+  <body>
+    <h3>가보고 싶은 곳</h3>
+    <hr>
+    <form>
+      나라: <input type="text" list="contires"><br>
+            <datalist id="contires">
+              <option value="캐나다"></option>
+              <option value="이탈리아"></option>
+              <option value="이집트"></option>
+            </datalist>
+      보고싶은 것: <input type="text" list="what"><br>
+            <datalist id="what">
+              <option value="오로라"></option>
+              <option value="콜로세움"></option>
+              <option value="피라미드"></option>
+            </datalist>
+    </form>
+  </body>
+</html>
